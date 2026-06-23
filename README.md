@@ -1,41 +1,67 @@
 # 🎬 Netflix Content Data Analysis
+> Analyzing 9,827 Netflix titles to uncover what drives content quality and platform strategy.
 
 ## 📌 Project Overview
-With the rapid growth of the OTT market, this project analyzes data to identify what drives a content's success. By exploring trends across genres, languages, and release periods, alongside rating patterns, this analysis derives actionable business insights for streaming platforms.
-
----
+With the rapid growth of the OTT market, this project explores what makes content succeed on streaming platforms. By analyzing genre ratings, language trends, production volume, and popularity patterns, the analysis delivers data-driven strategic insights for OTT decision-makers.
 
 ## 📂 Dataset
-* **Source:** Kaggle (Netflix Movies and TV Shows Data Analysis)
-* **Dataset Size:** 9,827 rows of content data
-* **Analysis Period:** June 2026
+| Item | Detail |
+|------|--------|
+| **Source** | Kaggle – Netflix Movies and TV Shows |
+| **Size** | 9,827 rows |
+| **Period** | Analysis conducted: June 2026 |
+| **Key Variables** | `title`, `type`, `genres`, `original_language`, `release_year`, `imdb_score`, `imdb_votes`, `popularity` |
 
----
+## 🛠 Tech Stack
+| Tool | Usage |
+|------|-------|
+| **Python (Google Colab)** | Data loading, missing value handling, duplicate removal, dtype conversion |
+| **Pandas** | Filtering, groupby aggregation, EDA |
+| **Tableau** | 4-chart interactive dashboard — genre rating/count, language comparison, content trend, popularity scatter |
 
-## 🛠 Tech Stack & Tools
-* **Data Preprocessing:** Python (Google Colab)
-* **Data Analysis:** Pandas
-* **Data Visualization:** Tableau (Dashboard)
+## 📊 Dashboard
+![Netflix Content Analysis Dashboard](./dashboard.png)
+> Genre Avg Rating vs Count · Content Trend by Year · Popularity vs Vote Average · Avg Rating by Language
 
----
+## 🔍 Key Insights
+### 1. High-Quality Niche Genres — Documentary & Music Lead in Ratings
+- **Documentary** and **Music** ranked #1 and #2 in average IMDb rating (~7.0+)
+- Despite lower production volume, these categories deliver consistently high viewer satisfaction
+- **Drama** dominates in volume (3,200+ titles) but falls below the overall rating average — quantity does not equal quality
 
-## 📊 Key Insights
+### 2. K-Content Outperforms All Languages
+- **Korean-language content** achieved the **highest average rating (7.2/10)** across all original languages
+- Ranked above Japanese, Hindi, Spanish, Chinese, French, and English
+- Notably, English-language content — the most abundant on the platform — recorded the **lowest average rating**
 
-### 1. High-Quality Niche Genres
-* **Documentary** and **Music** genres ranked #1 in average ratings. 
-* While these genres have a lower volume of production, they consistently deliver high viewer satisfaction and quality.
+### 3. Popularity ≠ Quality
+- The **Popularity vs Vote Average** scatter plot shows no clear positive correlation
+- High-popularity genres (Action, Animation, Crime) cluster around moderate ratings
+- Niche genres (Documentary, Music, War, Mystery) maintain high ratings despite low popularity scores
 
-### 2. Global Competitiveness of K-Content
-* **Korean-language content** achieved the highest average rating by language (**7.2/10**).
-* This underscores the strong market competitiveness and premium positioning of K-content on global platforms.
+### 4. Post-Pandemic Production Recovery
+- Content production peaked around **2015–2016**, then declined sharply in **2020** due to COVID-19
+- A clear **recovery trend began in 2022**, with volume rebounding toward pre-pandemic levels
 
-### 3. Popularity vs. Ratings
-* **Popularity metrics and user ratings operate independently.** * High viewership or buzz does not automatically guarantee high ratings, indicating distinct viewer behaviors for trending vs. highly-rated content.
+## 💡 Strategic Recommendations
+| Strategy | Rationale |
+|----------|-----------|
+| **Invest in niche, high-rating genres** | Documentary & Music punch above their weight in satisfaction despite low volume |
+| **Double down on K-content** | Highest average rating across all languages; proven global IP with premium perception |
+| **Decouple popularity from editorial strategy** | Trending content drives short-term buzz; high-rated niche content drives long-term retention |
+| **Rebuild post-pandemic pipeline** | 2022+ recovery window is an opportunity to lock in catalog diversity before competition intensifies |
 
-### 4. Post-Pandemic Recovery
-* Content production experienced a sharp decline in 2020 due to the COVID-19 pandemic but showed a significant **recovery trend starting in 2022**.
+## 📁 Repository Structure
+```
+netflix-content-analysis/
+├── README.md
+├── dashboard.png
+├── netflix_analysis.ipynb    # Data cleaning & EDA (Google Colab)
+└── data/
+    └── netflix_data.csv      # Source: Kaggle
+```
 
----
-
-## 💡 Conclusion & Strategy
-For OTT platforms, a **quality-over-quantity strategy** proves to be highly effective. To maximize subscriber retention and engagement, platforms should focus on high-fidelity niche content and proven international IPs (like Korean dramas) rather than simply scaling the volume of titles.
+## 👤 Author
+**Minse** · [GitHub @minse0321](https://github.com/minse0321)
+Business Administration, Gachon University
+Aspiring Data Analyst | MSBA Candidate (Fall 2027)
