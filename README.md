@@ -1,24 +1,41 @@
-# 🎬 Netflix 콘텐츠 분석 포트폴리오
+# 🎬 Netflix Content Data Analysis
 
-## 📌 프로젝트 개요
-OTT 시장 성장에 따라 어떤 콘텐츠가 성공하는지 데이터로 분석했습니다.
-장르, 언어, 시기별 트렌드와 평점 패턴을 탐색하고 비즈니스 인사이트를 도출했습니다.
+## 📌 Project Overview
+With the rapid growth of the OTT market, this project analyzes data to identify what drives a content's success. By exploring trends across genres, languages, and release periods, alongside rating patterns, this analysis derives actionable business insights for streaming platforms.
 
-## 📂 데이터
-- **출처**: Kaggle - Netflix Movies and TV Shows Data Analysis
-- **규모**: 9,827개 콘텐츠
-- **기간**: 2026년 6월
+---
 
-## 🛠 사용 도구
-- Python (Google Colab) - 데이터 전처리
-- Tableau - 시각화 및 대시보드
-- Pandas - 데이터 분석
+## 📂 Dataset
+* **Source:** Kaggle (Netflix Movies and TV Shows Data Analysis)
+* **Dataset Size:** 9,827 rows of content data
+* **Analysis Period:** June 2026
 
-## 📊 주요 인사이트
-1. **Documentary, Music 장르**가 평균 평점 1위 - 희소하지만 퀄리티 높음
-2. **한국어 콘텐츠**가 언어별 평균 평점 1위 (7.2점) - K-콘텐츠 경쟁력 확인
-3. **인기도 ≠ 평점** - 두 지표는 독립적으로 움직임
-4. **2020년 코로나19**로 콘텐츠 제작 급감 후 2022년 회복세
+---
 
-## 💡 결론
-OTT 플랫폼은 콘텐츠 양보다 퀄리티 전략이 유효하다.
+## 🛠 Tech Stack & Tools
+* **Data Preprocessing:** Python (Google Colab)
+* **Data Analysis:** Pandas
+* **Data Visualization:** Tableau (Dashboard)
+
+---
+
+## 📊 Key Insights
+
+### 1. High-Quality Niche Genres
+* **Documentary** and **Music** genres ranked #1 in average ratings. 
+* While these genres have a lower volume of production, they consistently deliver high viewer satisfaction and quality.
+
+### 2. Global Competitiveness of K-Content
+* **Korean-language content** achieved the highest average rating by language (**7.2/10**).
+* This underscores the strong market competitiveness and premium positioning of K-content on global platforms.
+
+### 3. Popularity vs. Ratings
+* **Popularity metrics and user ratings operate independently.** * High viewership or buzz does not automatically guarantee high ratings, indicating distinct viewer behaviors for trending vs. highly-rated content.
+
+### 4. Post-Pandemic Recovery
+* Content production experienced a sharp decline in 2020 due to the COVID-19 pandemic but showed a significant **recovery trend starting in 2022**.
+
+---
+
+## 💡 Conclusion & Strategy
+For OTT platforms, a **quality-over-quantity strategy** proves to be highly effective. To maximize subscriber retention and engagement, platforms should focus on high-fidelity niche content and proven international IPs (like Korean dramas) rather than simply scaling the volume of titles.
