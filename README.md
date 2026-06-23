@@ -20,7 +20,7 @@ With the rapid growth of the OTT market, this project explores what makes conten
 | **Tableau** | 4-chart interactive dashboard — genre rating/count, language comparison, content trend, popularity scatter |
 
 ## 📊 Dashboard
-![Netflix Content Analysis Dashboard](./dashboard.png)
+![Netflix Content Analysis Dashboard](./Netflix_dashboard.png)
 > Genre Avg Rating vs Count · Content Trend by Year · Popularity vs Vote Average · Avg Rating by Language
 
 ## 🔍 Key Insights
