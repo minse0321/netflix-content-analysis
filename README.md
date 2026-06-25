@@ -60,8 +60,3 @@ netflix-content-analysis/
 └── data/
     └── netflix_data.csv      # Source: Kaggle
 ```
-
-## 👤 Author
-**Minse** · [GitHub @minse0321](https://github.com/minse0321)
-Business Administration, Gachon University
-Aspiring Data Analyst | MSBA Candidate (Fall 2027)
